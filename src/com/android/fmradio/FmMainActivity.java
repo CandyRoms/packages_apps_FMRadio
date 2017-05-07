@@ -852,12 +852,8 @@ public class FmMainActivity extends Activity implements FmFavoriteEditDialog.Edi
      * @return true or false indicate antenna available or not
      */
     private boolean isAntennaAvailable() {
-   if (mContext.getResources().getBoolean(R.bool.config_enableWirelessFM)) {
-       return true;
-   } else {
-        return mAudioManager.isWiredHeadsetOn();
+        return true;
     }
-  }
 
     /**
      * When on activity result, tune to station which is from station list
